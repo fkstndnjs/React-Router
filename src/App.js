@@ -1,14 +1,17 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
+import Videos from "./pages/Videos";
+import NotFound from "./pages/NotFound";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <p>HOME</p>,
-    errorElement: <p>Not FOUND</p>,
+    element: <Home />,
+    errorElement: <NotFound />,
   },
   {
     path: "/videos",
-    element: <p>VIDEOS </p>,
+    element: <Videos />,
   },
 ]);
 
